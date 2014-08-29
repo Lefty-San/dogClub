@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>fuwa</title>
+  
+  <meta name=viewport content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="clubNav">
+	<span class="clubMobileSwitch">三</span>
+	<span class="clubNavItem active">HOME</span>
+	<span class="clubNavSpace">|</span>
+	<span class="clubNavItem">ABOUT US</span>
+	<span class="clubNavSpace">|</span>
+	<span class="clubNavItem">SERVICES</span>
+	<span class="clubNavSpace">|</span>
+	<span class="clubNavItem">GALLERY</span>
+	<span class="clubNavSpace">|</span>
+	<span class="clubNavItem">TESTAMONIALS</span>
+	<span class="clubNavSpace">|</span>
+	<span class="clubNavItem">STAFF</span>
+	<span class="clubNavSpace">|</span>
+	<span class="clubNavItem">CONTACTS</span>
+</div>
+<div class="clubTitle">
+	<div class="clubLeft title">
+		<div class="clubLogo"></div>
+	</div>
+	<div class="clubRight title">
+		<span class="callSmall">Call Us Toll Free</span>
+		<span class="callLarge">1<sub>-</sub>800<sub>-</sub>234 56 89</span>
+	</div>
+</div>
+<div class="clubSlider">
+	<div class="sliderCell zero">
+		work with your dog to imporve his behavior
+	</div>
+	<div class="sliderCell one">
+		Content for the second slider cell	
+	</div>
+	<div class="sliderCell two">
+		Content for the third slider cell
+	</div>
+</div>
+<!-- div class="sliderMark">
+		<span class="mark 0 active">ロ</span>
+		<span class="mark 1">ロ</span>
+		<span class="mark 2">ロ</span>
+	</div -->
+<div class="clubSections">
+	<div class="clubText">
+		<br /><b>Exhibitions <br /><span>More Words</span></b>
+		<ul>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+		</ul>
+	</div>
+	<div class="clubText">
+		<br /><b>Breeds<br /> <span>More Words</span></b>
+		<ul>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+		</ul>
+	</div>
+	<div class="clubText">
+		<br /><b>Food <br /><span>More Words</span></b>
+		<ul>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+		</ul>
+	</div>
+	<div class="clubText">
+		<br /><b>New Program <br /><span>More Words</span></b>
+		<ul>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+			<li>list item 1</li>
+		</ul>
+	</div>	
+</div>
+<div class="clubBottom">
+	<div class="bottomCell iti">
+		<b>Welcome to our club</b><br />
+		<p><span>some lines of red text to fill up this space and hopefully makings three lines</span></p><br />
+		<p>some small text</p>
+		
+	</div>
+	<div class="bottomCell ni">
+		<b>Welcome to our club</b><br />
+		<p><span>some lines of red text to fill up this space and hopefully make three lines</span></p><br />
+		<p>some small text</p>
+	</div>
+	<div class="bottomCell san">
+		<b>Welcome to our club</b><br />
+		<p><span>some lines of red text to fill up this space and hopefully make three lines</span></p><br />
+		<p>some small text</p>
+	</div>
+</div>
+<div class="clubFooter">
+	
+</div>
+<!--  Just for fun let's load the stylesheet and script dynamically to boost performance  -->
+<script>
+
+var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = './style/style.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+
+</script>
+<!--  below is the fastest standard way to load script without slowing down the page but I am going to comment it for a more fun way that is not supported in all browsers. I just think it is cool  -->
+<!-- script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="./js/dog.js" async></script -->
+
+<script>
+
+[
+  '//code.jquery.com/jquery-1.11.0.min.js',
+  '//code.jquery.com/jquery-migrate-1.2.1.min.js',
+  './js/dog.js'
+].forEach(function(src) {
+  var script = document.createElement('script');
+  script.src = src;
+  script.async = false;
+  document.head.appendChild(script);
+});
+ /*
+  * async false because if we need the jquery '$' to come in first
+  */
+</script>
+
+</body>
